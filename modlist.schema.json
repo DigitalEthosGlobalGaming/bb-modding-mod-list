@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["name", "version", "mods"],
+  "properties": {
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "version": {"const": 1},
+    "mods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "repo"],
+        "properties": {
+          "id": {"type": "string", "description": "Mod ID as in the mod's mod.toml"},
+          "name": {"type": "string"},
+          "description": {"type": "string"},
+          "author": {"type": "string"},
+          "repo": {"type": "string", "format": "uri", "description": "Git repository URL"},
+          "ref": {"type": "string", "description": "Branch, tag or commit to install; prefer a tag or commit"},
+          "abi": {"type": "string", "description": "Minimum bbmod ABI required"}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "./modlist.schema.json",
+  "name": "bb-modding official mod list",
+  "description": "Mods for Bloodborne on a bbport build with bbmod integrated.",
+  "version": 1,
+  "mods": [
+    {
+      "id": "bbmod.dualsense",
+      "name": "Adaptive Triggers",
+      "description": "DualSense adaptive trigger feedback, lightbar and grip haptics.",
+      "author": "DigitalEthosGlobalGaming",
+      "repo": "https://github.com/DigitalEthosGlobalGaming/bb-modding-adaptive-triggers",
+      "ref": "main",
+      "abi": "1.3"
+    },
+    {
+      "id": "me.difficulty",
+      "name": "Difficulty",
+      "description": "Scale damage, echoes and stamina cost, restock consumables, regenerate health out of combat.",
+      "author": "DigitalEthosGlobalGaming",
+      "repo": "https://github.com/DigitalEthosGlobalGaming/bb-modding-difficulty",
+      "ref": "main",
+      "abi": "1.1"
+    }
+  ]
+}
